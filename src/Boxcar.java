@@ -31,17 +31,16 @@ public class Boxcar {
     // no matter what value is stored in the u parameter.
     public Boxcar(String c, int u, boolean r) {
         // CARGO
-        if (c.toLowerCase() == "gadgets") {
-            cargo = c.toLowerCase();
-        } else if (c.toLowerCase() == "widgets") {
-            cargo = c.toLowerCase();
-        } else if (c.toLowerCase() == "wadgets") {
-            cargo = c.toLowerCase();
-        } else if (c.toLowerCase() == "gizmos") {
-            cargo = c.toLowerCase();
-        } else {
+        if (c.equalsIgnoreCase("gadgets") == true)
+            cargo = "gadgets";
+        else if (c.equalsIgnoreCase("widgets") == true)
+            cargo = "widgets";
+        else if (c.equalsIgnoreCase("wadgets") == true)
+            cargo = "wadgets";
+        else if (c.equalsIgnoreCase("gizmos") == true)
             cargo = "gizmos";
-        }
+        else
+            cargo = "gizmos";
         // NUMUNITS
         if (u < 0 || u > 10) {
             numUnits = 0;
@@ -49,10 +48,9 @@ public class Boxcar {
             numUnits = u;
         }
         // REPAIR
+        repair = r;
         if (r == true) {
             numUnits = 0;
-        } else {
-            repair = r;
         }
     }
 
@@ -95,17 +93,16 @@ public class Boxcar {
     // "gizmos", "gadgets", "widgets", or "wadgets" (ignoring case), the method sets cargo
     // to "gizmos".
     public void setCargo(String c) {
-        if (c.toLowerCase() == "gadgets") {
-            cargo = c.toLowerCase();
-        } else if (c.toLowerCase() == "widgets") {
-            cargo = c.toLowerCase();
-        } else if (c.toLowerCase() == "wadgets") {
-            cargo = c.toLowerCase();
-        } else if (c.toLowerCase() == "gizmos") {
-            cargo = c.toLowerCase();
-        } else {
+        if (c.equalsIgnoreCase("gadgets") == true)
+            cargo = "gadgets";
+        else if (c.equalsIgnoreCase("widgets") == true)
+            cargo = "widgets";
+        else if (c.equalsIgnoreCase("wadgets") == true)
+            cargo = "wadgets";
+        else if (c.equalsIgnoreCase("gizmos") == true)
             cargo = "gizmos";
-        }
+        else
+            cargo = "gizmos";
     }
 
     // The isFull method returns true if numUnits is equal to 10, false otherwise.
