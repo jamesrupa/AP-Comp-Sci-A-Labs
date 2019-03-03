@@ -6,6 +6,11 @@
 
 This is just a simple assignment that we had to alter the code based on the directions and what had been asked for. Boxcar wass part 1 for this assignment and then we had to add on to the code with the freight train.
 
+## How to Use Project
+
+For inital files go to --> inital folder\
+For edited/source files go to --> src folder
+
 ## Future Plans
 
 * Finish up SymptAid Response
