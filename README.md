@@ -1,5 +1,5 @@
 # Boxcar Lab
-**AP Computer Science A Assignment**\
+**AP Computer Science A Lab**\
 *Created By James Rupa*
 
 ## Project Description
